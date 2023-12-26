@@ -1,3 +1,6 @@
 export * from "./LoyalCustomer"
 export * from "./WhySection"
 export * from "./CEO"
+export * from "./Feature"
+export * from "./JoinUs"
+export * from "./Footer"

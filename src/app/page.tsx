@@ -1,11 +1,13 @@
-import {CEO, LoyalCustomer, WhySection} from './(components)'
+import {Ceo, Feature, LoyalCustomer, WhySection, JoinUs, Footer} from './(components)'
 
 export default function Home() {
   return (
     <main >
       <LoyalCustomer/>
       <WhySection/>
-      <CEO/>
+      <Ceo/>
+      <JoinUs/>
+      <Footer/>
     </main>
   )
 }

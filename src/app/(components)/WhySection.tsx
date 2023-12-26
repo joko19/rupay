@@ -26,7 +26,7 @@ const DATA = [
 
 export function WhySection() {
   return (
-    <section className="max-w-7xl mx-auto mt-12 px-12">
+    <section className="max-w-7xl mx-auto mt-12 px-12 sm:bg-[#FEFBFF] bg-shite">
       <h1 className="text-center text-[#757780] text-lg uppercase">
         Why Rupay so Famous
       </h1>
@@ -43,7 +43,7 @@ export function WhySection() {
         {DATA.map((item) => (
           <div
             key={item.id}
-            className=" flex flex-col gap-4 border rounded-2xl p-4 bg-[#FEFBFF] sm:text-2xl text-lg font-medium"
+            className=" flex flex-col gap-4 border rounded-2xl p-4 sm:bg-white bg-[#FEFBFF] sm:text-2xl text-lg font-medium"
           >
             <Image
               key={item.id}
