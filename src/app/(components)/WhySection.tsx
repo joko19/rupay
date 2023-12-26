@@ -30,7 +30,7 @@ export function WhySection() {
       <h1 className="text-center text-[#757780] text-lg uppercase">
         Why Rupay so Famous
       </h1>
-      <h2 className="text-black sm:text-6xl text-4xl text-center mt-4">
+      <h2 className="text-black sm:text-6xl text-3xl text-center mt-4">
         <span className="text-[#0146B1]">Ru</span>
         <span className="text-[#FE9F0F]">Pay</span> Makes all Payment{" "}
         <span className="text-[#FE9F0F]">Easier</span>

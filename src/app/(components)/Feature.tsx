@@ -48,7 +48,7 @@ export function Feature() {
   return (
     <section className="mx-auto sm:px-0 sm:py-16 py-12 sm:bg-[#fbf8fd] bg-white">
       <div className="sm:px-12">
-        <h2 className="text-black sm:text-6xl text-4xl text-center mt-4 sm-only:font-semibold mb-8">
+        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 sm-only:font-semibold mb-8">
           From
           <span className="text-[#0146B1]"> Zero </span> to
           <span className="text-[#FE9F0F]"> Hero </span> <br />

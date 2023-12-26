@@ -16,7 +16,7 @@ export function Hero() {
           <h1 className="text-center text-[#757780] text-lg uppercase">
             YOUR PARTNER TO SCALE UP
           </h1>
-          <h2 className="text-black sm:text-6xl text-4xl text-center mt-4 font-semibold">
+          <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-semibold">
             <span className="text-[#0146B1]">Connect</span>. Payment.
             <span className="text-[#FE9F0F]"> Scale Up🚀</span>
           </h2>

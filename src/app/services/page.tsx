@@ -53,7 +53,7 @@ export default function Services() {
         <h1 className="text-center text-[#757780] text-lg uppercase">
           PRODUCT & SERVICES
         </h1>
-        <h2 className="text-black sm:text-6xl text-4xl text-center mt-4 font-semibold">
+        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-semibold">
           We
           <span className="text-[#0146B1]"> serve</span>. Our
           <span className="text-[#FE9F0F]"> services</span>

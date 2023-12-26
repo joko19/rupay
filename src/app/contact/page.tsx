@@ -4,13 +4,13 @@ import { MdEmail } from "react-icons/md";
 import { FaArrowRight, FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 
-export default function Services() {
+export default function Contact() {
   return (
     <>
       <Header />
       <div className="flex p-12 sm:pt-10 pt-8">
         <div className="sm:w-3/4 w-full">
-          <h2 className="text-black sm:text-5xl text-4xl mt-4 font-semibold">
+          <h2 className="text-black sm:text-5xl text-3xl mt-4 font-semibold">
             Love to hear from you, Capt!
             <br />
             <span className="text-[#0146B1] underline"> Get in </span>
