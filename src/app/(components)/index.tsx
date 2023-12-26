@@ -1,3 +1,5 @@
+export * from "./Header"
+export * from "./Hero"
 export * from "./LoyalCustomer"
 export * from "./WhySection"
 export * from "./CEO"

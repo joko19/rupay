@@ -1,14 +1,25 @@
-import {Ceo, Feature, LoyalCustomer, WhySection, JoinUs, Footer} from './(components)'
+import {
+  Header,
+  Hero,
+  LoyalCustomer,
+  WhySection,
+  Ceo,
+  Feature,
+  JoinUs,
+  Footer,
+} from "./(components)";
 
 export default function Home() {
   return (
-    <main >
-      <LoyalCustomer/>
-      <WhySection/>
-      <Ceo/>
-      <Feature/>
-      <JoinUs/>
-      <Footer/>
-    </main>
-  )
+    <>
+      <Header />
+      <Hero />
+      <LoyalCustomer />
+      <WhySection />
+      <Ceo />
+      <Feature />
+      <JoinUs />
+      <Footer />
+    </>
+  );
 }
