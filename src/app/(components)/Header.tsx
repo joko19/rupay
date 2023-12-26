@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { IoMenu } from "react-icons/io5";
 
 const MENU = ["Home", "Services", "About", "Contact"];
 
@@ -31,7 +30,7 @@ export function Header() {
         {/* desktop */}
         <div className="sm:flex gap-8 text-[#1B1B1F] hidden">
           {MENU.map((item) => (
-            <Link key={item} href={`${item.toLowerCase()}`}>
+            <Link key={item} href={`${item === "Home" ? "/" : item.toLowerCase()}`} >
               {item}
             </Link>
           ))}
@@ -63,7 +62,10 @@ export function Header() {
       >
         <div className="flex flex-col gap-2 sm:hidden items-center text-[#1B1B1F]">
           {MENU.map((item) => (
-            <Link key={item} href={`${item.toLowerCase()}`}>
+            <Link
+              key={item}
+              href={`${item === "Home" ? "/" : item.toLowerCase()}`}
+            >
               {item}
             </Link>
           ))}

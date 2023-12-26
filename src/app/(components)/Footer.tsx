@@ -127,7 +127,7 @@ export function Footer() {
       </section>
       <div className="flex flex-row-reverse ">
         <Image
-          src="/assets/icons/footer2.svg"
+          src="/assets/ornament/footer.svg"
           width={500}
           height={500}
           alt="footer"
