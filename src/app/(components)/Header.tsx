@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from 'next/navigation'
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
@@ -25,7 +25,7 @@ const MENU = [
 ];
 
 export function Header() {
-  const pathname = usePathname()
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -52,7 +52,11 @@ export function Header() {
             <Link
               key={item.title}
               href={item.slug}
-              className={`${item.slug === pathname ? "text-[#0146B1] font-semibold" : "text-[#1B1B1F]"} hover:text-[#FE9F0F]`}
+              className={`${
+                item.slug === pathname
+                  ? "text-[#0146B1] font-semibold"
+                  : "text-[#1B1B1F]"
+              } hover:text-[#FE9F0F]`}
             >
               {item.title}
             </Link>
@@ -88,6 +92,11 @@ export function Header() {
             <Link
               key={item.title}
               href={item.slug}
+              className={`${
+                item.slug === pathname
+                  ? "text-[#0146B1] font-semibold"
+                  : "text-[#1B1B1F]"
+              } hover:text-[#FE9F0F]`}
             >
               {item.title}
             </Link>

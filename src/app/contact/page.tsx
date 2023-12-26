@@ -44,7 +44,7 @@ export default function Contact() {
               +6281 992 230 213
             </Link>
             <Link
-              href="https://www.facebook.com/rupay"
+              href="https://www.facebook.com"
               className="flex gap-4 items-center"
               target="_blank"
             >
