@@ -1,12 +1,31 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-const MENU = ["Home", "Services", "About", "Contact"];
+const MENU = [
+  {
+    title: "Home",
+    slug: "/",
+  },
+  {
+    title: "Services",
+    slug: "/services",
+  },
+  {
+    title: "About",
+    slug: "/about",
+  },
+  {
+    title: "Contact",
+    slug: "/contact",
+  },
+];
 
 export function Header() {
+  const pathname = usePathname()
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -28,10 +47,14 @@ export function Header() {
           className="w-[180px]"
         />
         {/* desktop */}
-        <div className="sm:flex gap-8 text-[#1B1B1F] hidden">
+        <div className="sm:flex gap-8  hidden">
           {MENU.map((item) => (
-            <Link key={item} href={`${item === "Home" ? "/" : item.toLowerCase()}`} >
-              {item}
+            <Link
+              key={item.title}
+              href={item.slug}
+              className={`${item.slug === pathname ? "text-[#0146B1] font-semibold" : "text-[#1B1B1F]"} hover:text-[#FE9F0F]`}
+            >
+              {item.title}
             </Link>
           ))}
         </div>
@@ -63,10 +86,10 @@ export function Header() {
         <div className="flex flex-col gap-2 sm:hidden items-center text-[#1B1B1F]">
           {MENU.map((item) => (
             <Link
-              key={item}
-              href={`${item === "Home" ? "/" : item.toLowerCase()}`}
+              key={item.title}
+              href={item.slug}
             >
-              {item}
+              {item.title}
             </Link>
           ))}
         </div>

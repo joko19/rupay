@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export function JoinUs() {
   return (
-    <section className="mx-auto p-12 sm:bg-[#fbf8fd] bg-white">
+    <section className="mx-auto sm:p-12 p-4 sm:bg-[#fbf8fd] bg-white">
       <h1 className="text-center text-[#757780] text-lg uppercase">
         Join With Rupay
       </h1>
@@ -14,8 +14,8 @@ export function JoinUs() {
         <span className="text-[#FE9F0F]">Pay </span>
         Platform?
       </h2>
-      <div className="flex mt-12 mx-auto justify-center gap-8">
-        <button className=" w-44 bg-[#E1E2EC] py-4 rounded-full">
+      <div className="flex mt-12 mx-auto justify-center sm:gap-8 gap-4">
+        <button className="w-44 bg-[#E1E2EC] py-4 rounded-full">
           Contact Us
         </button>
         <button className="w-44 flex justify-center gap-6 items-center bg-[#0146B1] text-white py-4 rounded-full">

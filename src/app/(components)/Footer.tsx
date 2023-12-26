@@ -32,7 +32,7 @@ const COMPANY = [
 export function Footer() {
   return (
     <footer className="sm:bg-[#fbf8fd] bg-white">
-      <section className="flex sm:flex-row flex-col gap-4 sm:justify-between border-b pb-4 p-12">
+      <section className="flex sm:flex-row flex-col gap-4 sm:justify-between border-b pb-4 sm:p-12 p-4">
         <div className="sm:w-2/5 w-full sm:items-start items-center pb-4 flex flex-col ">
           <Image
             src="/assets/icons/rupay.svg"
@@ -46,14 +46,16 @@ export function Footer() {
             all payment
             <span className="text-[#FE9F0F]"> easier </span>
           </h2>
-          <p className="mt-4">Get latest information and tips from RuPay</p>
-          <div className="flex  bg-[#F2F0F4] rounded-full p-2 border mt-4">
+          <p className="mt-4 text-center">
+            Get latest information and tips from RuPay
+          </p>
+          <div className="flex  bg-[#F2F0F4] border-[#d4d3dc] rounded-full p-2 border mt-4">
             <input
               type="text"
               placeholder="Your email..."
-              className="bg-[#F2F0F4] px-4 focus:outline-none"
+              className="bg-[#F2F0F4] px-4 focus:outline-none w-48"
             />
-            <div className="flex items-center bg-[#e1e2ec] rounded-full p-2">
+            <div className="flex gap-2 items-center bg-[#e1e2ec] border-[#d4d3dc] rounded-full p-2">
               Subscribe{"   "} <IoIosSend className="text-[#0146B1]" />
             </div>
           </div>

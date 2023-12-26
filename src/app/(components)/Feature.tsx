@@ -46,7 +46,7 @@ const DATA = [
 
 export function Feature() {
   return (
-    <section className="mx-auto sm:px-0 sm:py-16 p-12 sm:bg-[#fbf8fd] bg-white">
+    <section className="mx-auto sm:px-0 sm:py-16 py-12 sm:bg-[#fbf8fd] bg-white">
       <div className="sm:px-12">
         <h2 className="text-black sm:text-6xl text-4xl text-center mt-4 sm-only:font-semibold mb-8">
           From

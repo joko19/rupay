@@ -65,14 +65,14 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-3 grid-cols-2 gap-12 p-12">
+      <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-12 gap-4 sm:p-12 p-4">
         {DATA.map((item) => (
           <div
             key={item.title}
-            className="flex flex-col justify-between px-8 pb-8 rounded-3xl shadow-xl border "
+            className="flex flex-col justify-between sm:px-8 px-4 sm:pb-8 pb-4 rounded-3xl shadow-xl border "
           >
             <div
-              className={`bg-[${item.color}] h-12 w-12 rounded-b-full ml-4 mb-4`}
+              className={`bg-[${item.color}] h-12 w-12 rounded-b-full sm:ml-4 ml-2 mb-4`}
             />
             <h1 className="font-bold text-2xl">{item.title} </h1>
             <p className="text-[#757780] sm:mt-8 sm:mb-12 mb-4">
