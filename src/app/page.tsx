@@ -6,6 +6,7 @@ export default function Home() {
       <LoyalCustomer/>
       <WhySection/>
       <Ceo/>
+      <Feature/>
       <JoinUs/>
       <Footer/>
     </main>

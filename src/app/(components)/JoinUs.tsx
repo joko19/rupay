@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export function JoinUs() {
   return (
-    <section className="max-w-7xl mx-auto p-12 sm:bg-[#fbf8fd] bg-white">
+    <section className="mx-auto p-12 sm:bg-[#fbf8fd] bg-white">
       <h1 className="text-center text-[#757780] text-lg uppercase">
         Join With Rupay
       </h1>

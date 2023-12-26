@@ -32,8 +32,8 @@ const COMPANY = [
 export function Footer() {
   return (
     <footer className="sm:bg-[#fbf8fd] bg-white">
-      <section className="flex sm:flex-row flex-col sm:justify-between border-b pb-4 p-12">
-        <div className="sm:w-1/3 w-full sm:items-start items-center pb-4 flex flex-col ">
+      <section className="flex sm:flex-row flex-col gap-4 sm:justify-between border-b pb-4 p-12">
+        <div className="sm:w-2/5 w-full sm:items-start items-center pb-4 flex flex-col ">
           <Image
             src="/assets/icons/rupay.svg"
             width={500}
@@ -59,7 +59,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="sm:w-2/3 grid sm:grid-cols-3 grid-cols-2 justify-around gap-12 mt-12">
+        <div className="sm:w-3/5 grid sm:grid-cols-3 grid-cols-2 justify-around gap-12 mt-12">
           <div>
             <h3 className="font-bold mb-2">Product</h3>
             <div className="flex flex-col">

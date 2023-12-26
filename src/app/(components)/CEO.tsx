@@ -3,7 +3,7 @@ import React from "react";
 
 export function Ceo() {
   return (
-    <section className="flex flex-col gap-2 mx-auto items-center mt-12 bg-[#fbf8fd] pb-12 border-t border-b px-12">
+    <section className="flex flex-col gap-2 mx-auto items-center bg-[#fbf8fd] pb-12 border-t border-b px-12">
       <Image
         src="/assets/images/ceo.svg"
         width={200}
