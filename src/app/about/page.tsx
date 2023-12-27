@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import { Footer, Header, JoinUs } from "../(components)";
+import { Footer, Header } from "../(components)";
 import Image from "next/image";
 import { FaTwitter, FaInstagram, FaFacebookSquare } from "react-icons/fa";
 import Carousel from "react-multi-carousel";
 import { EMPLOYEE_DATA, WORKS_DATA } from "./dummy";
+import YouTubePlayer from "./YoutubePlayer";
 
 const responsive = {
   superLargeDesktop: {
@@ -95,14 +96,9 @@ export default function About() {
           inquiries with precision and charm. Backed by imaginary investors from
           across the galaxy.
         </p>
-
-        <Image
-          src={`/assets/images/thumbnail.svg`}
-          width={46}
-          height={46}
-          alt="icons"
-          className="w-full mt-12"
-        />
+        <div className="flex justify-center my-12 max-w-3xl mx-auto">
+          <YouTubePlayer videoId="a3ICNMQW7Ok" />
+        </div>
       </section>
       <section className="ornament-diagonal">
         <div className="max-w-7xl mx-auto">
@@ -141,7 +137,7 @@ export default function About() {
               />
             </div>
             <div className="  -mt-8 text-center">
-              <div className="font-serif font-semibold" >{item.name}</div>
+              <div className="font-serif font-semibold">{item.name}</div>
               <p className="text-[#757780]"> {item.role}</p>
               <div className="flex gap-2 mx-auto mt-2 justify-center">
                 <Link

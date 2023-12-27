@@ -8,8 +8,8 @@ export default function Contact() {
   return (
     <>
       <Header />
-      <div className="flex p-12 sm:pt-10 pt-8">
-        <div className="sm:w-3/4 w-full">
+      <div className="flex sm:flex-row flex-col gap-12 p-12 sm:pt-10 pt-8">
+        <div className="w-full">
           <h2 className="text-black sm:text-5xl text-3xl mt-4 font-serif">
             Love to hear from you, Capt!
             <br />
@@ -56,6 +56,19 @@ export default function Contact() {
               RuPay Payment Gateway
             </Link>
           </div>
+        </div>
+
+        <div className="w-full">
+          <div>
+            <iframe
+              title="address"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.24102698393!2d106.74694495186634!3d-6.229740081354195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sNational%20Monument!5e0!3m2!1sen!2sid!4v1703700013678!5m2!1sen!2sid"
+              width="100%"
+              height="200"
+              loading="lazy"
+              className="rounded-xl"
+            ></iframe>
+          </div>
           <h3 className="font-bold mt-8">
             <span className="text-[#0146B1]">Ru</span>
             <span className="text-[#FE9F0F]">Pay</span> Headquarter
@@ -71,7 +84,8 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="w-1/4 sm:flex flex-col gap-6 hidden">
+        {/* version 1 */}
+        {/* <div className="w-1/4 sm:flex flex-col gap-6 hidden">
           <div className="bg-[#f2f0f4] rounded-full px-6 py-2 border flex flex-col border-[#d4d3dc]">
             <span className="text-[#93949c]">Full Name</span>
             <input
@@ -108,9 +122,8 @@ export default function Contact() {
           <button className="w-full flex justify-center gap-6 items-center bg-[#0146B1] text-white py-4 rounded-full">
             Send message <FaArrowRight />
           </button>
-        </div>
+        </div> */}
       </div>
-
       <Footer />
     </>
   );
