@@ -34,7 +34,7 @@ export default function About() {
         <h1 className="text-center text-[#757780] text-lg uppercase">
           RUPAY PAYMENT GATEWAY
         </h1>
-        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-semibold">
+        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
           Our
           <span className="text-[#0146B1]"> Mission </span>is to <br /> Make
           Payments
@@ -81,7 +81,7 @@ export default function About() {
       </section>
 
       <section className="p-12">
-        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-semibold">
+        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
           From Indonesia to
           <span className="text-[#0146B1]"> help all </span>
           <br /> business
@@ -106,7 +106,7 @@ export default function About() {
       </section>
       <section className="ornament-diagonal">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-semibold">
+          <h2 className="max-w-4xl mx-auto text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
             Works. Together with. Diversities🤙
           </h2>
           <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-12 gap-4 sm:p-12 p-4">
@@ -116,7 +116,7 @@ export default function About() {
                 className="flex flex-col sm:p-8 p-4 rounded-xl shadow-lg border bg-white"
               >
                 <h1
-                  className={`font-bold sm:text-6xl text-3xl text-[${item.color}]`}
+                  className={`font-bold sm:text-6xl text-3xl text-[${item.color}] font-serif`}
                 >
                   {item.title}{" "}
                 </h1>
@@ -141,7 +141,7 @@ export default function About() {
               />
             </div>
             <div className="  -mt-8 text-center">
-              <div>{item.name}</div>
+              <div className="font-serif font-semibold" >{item.name}</div>
               <p className="text-[#757780]"> {item.role}</p>
               <div className="flex gap-2 mx-auto mt-2 justify-center">
                 <Link
@@ -168,14 +168,13 @@ export default function About() {
         ))}
         <div className="flex flex-col items-center gap-2 pt-4">
           <div className="flex flex-col items-center justify-center bg-[#E1E2EC] w-[164px] h-[178px] rounded-xl">
-            <p className="sm:text-7xl text-4xl font-semibold">+231</p>
+            <p className="sm:text-7xl text-4xl font-serif">+231</p>
             <Link href="#" className="text-[#0146B1]">
               See all teams
             </Link>
           </div>
         </div>
       </section>
-      <JoinUs />
       <Footer />
     </>
   );

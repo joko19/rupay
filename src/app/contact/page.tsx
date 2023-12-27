@@ -10,7 +10,7 @@ export default function Contact() {
       <Header />
       <div className="flex p-12 sm:pt-10 pt-8">
         <div className="sm:w-3/4 w-full">
-          <h2 className="text-black sm:text-5xl text-3xl mt-4 font-semibold">
+          <h2 className="text-black sm:text-5xl text-3xl mt-4 font-serif">
             Love to hear from you, Capt!
             <br />
             <span className="text-[#0146B1] underline"> Get in </span>
@@ -28,12 +28,16 @@ export default function Contact() {
           <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-6 gap-2 sm:mt-12 mt-6 w-fit">
             <Link
               href="mailto:cs@rupay.com"
-              className="flex items-center"
+              className="flex gap-4 items-center"
               target="_blank"
             >
-              <MdEmail className="text-[#725572] sm:text-4xl text-2xl" /> cs@
-              <span className="text-[#0146B1]">ru</span>
-              <span className="text-[#FE9F0F]">pay</span>.com
+              <MdEmail className="text-[#725572] sm:text-4xl text-2xl" />{" "}
+              <div>
+                {" "}
+                cs@
+                <span className="text-[#0146B1]">ru</span>
+                <span className="text-[#FE9F0F]">pay</span>.com
+              </div>
             </Link>
             <Link
               href="https://wa.me/6281992230213"

@@ -37,3 +37,9 @@
   background-size: cover;
   width: 100%;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+.font-serif {
+  font-family: 'DM Serif Display', serif;
+}

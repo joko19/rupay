@@ -7,7 +7,7 @@ export function JoinUs() {
       <h1 className="text-center text-[#757780] text-lg uppercase">
         Join With Rupay
       </h1>
-      <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 sm-only:font-semibold">
+      <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
         {" "}
         Ready to join with
         <span className="text-[#0146B1]"> Ru</span>

@@ -43,7 +43,7 @@ export function Footer() {
               className="w-[180px]"
             />
           </Link>
-          <h2 className="text-black sm:text-4xl text-2xl sm-only:text-center mt-4 sm-only:font-bold">
+          <h2 className="text-black sm:text-4xl text-2xl sm-only:text-center mt-4 font-serif">
             <span className="text-[#0146B1]">Make </span>
             all payment
             <span className="text-[#FE9F0F]"> easier </span>
@@ -121,7 +121,7 @@ export function Footer() {
           </p>
         </div>
         <h1 className="font-bold mb-4 sm:text-left text-center mt-8">
-          ⛔️⛔️ Waspadalah terhadap Upaya Penipuan ⛔️⛔️{" "}
+          ⛔️⛔️ Beware of Fraud Attempts ⛔️⛔️{" "}
         </h1>
         <p className="sm:text-left text-center">
           RuPay is not a peer to peer lending company and does not have a

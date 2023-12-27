@@ -30,7 +30,7 @@ export function WhySection() {
       <h1 className="text-center text-[#757780] text-lg uppercase">
         Why Rupay so Famous
       </h1>
-      <h2 className="text-black sm:text-6xl text-3xl text-center mt-4">
+      <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
         <span className="text-[#0146B1]">Ru</span>
         <span className="text-[#FE9F0F]">Pay</span> Makes all Payment{" "}
         <span className="text-[#FE9F0F]">Easier</span>
@@ -43,7 +43,7 @@ export function WhySection() {
         {DATA.map((item) => (
           <div
             key={item.id}
-            className=" flex flex-col gap-4 border rounded-2xl p-4 sm:bg-white bg-[#FEFBFF] sm:text-2xl text-lg font-medium"
+            className=" flex flex-col gap-4 border rounded-2xl p-4 sm:bg-white bg-[#FEFBFF] sm:text-2xl text-lg font-serif"
           >
             <Image
               key={item.id}

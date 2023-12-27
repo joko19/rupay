@@ -50,12 +50,12 @@ export function Feature() {
   return (
     <section className="mx-auto sm:px-0 sm:py-16 py-12 sm:bg-[#fbf8fd] bg-white">
       <div className="sm:px-12">
-        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 sm-only:font-semibold mb-8">
+        <h2 className="text-black sm:text-6xl text-3xl text-center mt-4 mb-8 font-serif">
           From
           <span className="text-[#0146B1]"> Zero </span> to
           <span className="text-[#FE9F0F]"> Hero </span> <br />
           Uniquely
-          <span className="text-[#725572]">Payment Gateway🔥</span>
+          <span className="text-[#725572]"> Payment Gateway🔥</span>
         </h2>
         <center className="max-w-7xl mx-auto">
           RuPay is a payment gateway that helps businesses make payments simple,
@@ -87,7 +87,7 @@ export function Feature() {
           <div key={item.title} className="!w-[576px] sm:mx-auto mx-2">
             <div className="sm:w-64 w-44 h-full mx-auto flex flex-col justify-between gap-4 bg-white border rounded-3xl p-8 shadow-xl">
               <div>
-                <h2 className="font-bold sm:text-3xl text-xl">{item.title}</h2>
+                <h2 className="sm:text-3xl text-xl font-serif">{item.title}</h2>
                 <p className="text-[#757780] mt-2">{item.description}</p>
               </div>
               <Image
