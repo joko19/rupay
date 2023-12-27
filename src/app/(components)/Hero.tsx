@@ -1,29 +1,10 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import { FaArrowRight } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 576 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 576, min: 0 },
-    items: 1,
-  },
-};
+import { responsive } from "./const";
 
 const PaymentMethods = () => (
   <div className="flex flex-col items-center justify-center bg-[#fbf8fd] max-w-[400px] rounded-[120px] p-8 border-[#eceaee] mx-auto">
@@ -140,6 +121,11 @@ export function Hero() {
             payments easily with RuPay Platform. Accept credit and debit cards,
             e-wallets, bank transfers, and many more payment methods.
           </p>
+          <div className="flex w-full justify-center mt-4">
+            <button className="w-44 flex justify-center gap-6 items-center bg-[#0146B1] text-white py-4 rounded-full mx-auto mt-4">
+              Get Started <FaArrowRight />
+            </button>
+          </div>
         </div>
         <Image
           src="/assets/ornament/hero-right.svg"
@@ -163,7 +149,7 @@ export function Hero() {
           "tablet",
           "mobile",
         ]}
-        className="2xl:-mt-96 sm:-mt-56 -mt-60"
+        className="2xl:-mt-96 lg:-mt-56 md:-mt-40 sm:-mt-16"
       >
         <PaymentMethods />
         <DailyCheckouts />

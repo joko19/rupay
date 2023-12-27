@@ -34,13 +34,15 @@ export function Footer() {
     <footer className="sm:bg-[#fbf8fd] bg-white">
       <section className="flex sm:flex-row flex-col gap-4 sm:justify-between border-b pb-4 sm:p-12 p-4">
         <div className="sm:w-2/5 w-full sm:items-start items-center pb-4 flex flex-col ">
-          <Image
-            src="/assets/icons/rupay.svg"
-            width={500}
-            height={500}
-            alt="rupay"
-            className="w-[180px]"
-          />
+          <Link href="/">
+            <Image
+              src="/assets/icons/rupay.svg"
+              width={500}
+              height={500}
+              alt="rupay"
+              className="w-[180px]"
+            />
+          </Link>
           <h2 className="text-black sm:text-4xl text-2xl sm-only:text-center mt-4 sm-only:font-bold">
             <span className="text-[#0146B1]">Make </span>
             all payment

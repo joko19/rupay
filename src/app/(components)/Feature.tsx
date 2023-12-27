@@ -1,5 +1,27 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import Carousel from "react-multi-carousel";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 640 },
+    items: 3,
+  },
+  mobile: {
+    breakpoint: { max: 640, min: 0 },
+    items: 2,
+  },
+};
 
 const DATA = [
   {
@@ -21,27 +43,7 @@ const DATA = [
     title: "Payment Card",
     description: "Help you to manage card transaction easier",
     icon: "card.svg",
-  },
-  {
-    title: "Single Integration",
-    description: "Single API to connect to multiple Payment Channel",
-    icon: "connector.svg",
-  },
-  {
-    title: "Payment Link",
-    description: "Enable merchant create and send single or bulk invoice",
-    icon: "link.svg",
-  },
-  {
-    title: "Custom Payment",
-    description: "Self custom payment page for service integration",
-    icon: "sound.svg",
-  },
-  {
-    title: "Payment Card",
-    description: "Help you to manage card transaction easier",
-    icon: "card.svg",
-  },
+  }
 ];
 
 export function Feature() {
@@ -63,10 +65,27 @@ export function Feature() {
         </center>
       </div>
 
-      <div className="flex overflow-x-scroll pb-12 mt-8 mx-auto justify-center custom-scroll">
+      {/* <div className="flex overflow-x-scroll pb-12 mt-8 mx-auto justify-center custom-scroll"> */}
+
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={3000}
+        keyBoardControl={true}
+        // customTransition="all 3"
+        transitionDuration={1500}
+        removeArrowOnDeviceType={[
+          "superLargeDesktop",
+          "desktop",
+          "tablet",
+          "mobile",
+        ]}
+        className="pb-12 mt-8 mx-auto"
+      >
         {DATA.map((item) => (
-          <div key={item.title} className="!w-[576px] mx-2 ">
-            <div className="w-full h-full flex flex-col justify-between gap-4 bg-white border rounded-3xl p-8 shadow-xl">
+          <div key={item.title} className="!w-[576px] sm:mx-auto mx-2">
+            <div className="sm:w-64 w-44 h-full mx-auto flex flex-col justify-between gap-4 bg-white border rounded-3xl p-8 shadow-xl">
               <div>
                 <h2 className="font-bold sm:text-3xl text-xl">{item.title}</h2>
                 <p className="text-[#757780] mt-2">{item.description}</p>
@@ -81,7 +100,8 @@ export function Feature() {
             </div>
           </div>
         ))}
-      </div>
+      </Carousel>
+      {/* </div> */}
     </section>
   );
 }

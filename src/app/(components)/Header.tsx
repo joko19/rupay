@@ -35,17 +35,19 @@ export function Header() {
   return (
     <>
       <header
-        className={`flex items-center justify-between py-2 px-12 sticky top-0 bg-white ${
+        className={`flex items-center justify-between py-2 px-12 sticky top-0 bg-white z-50 ${
           !isMobileMenuOpen && "border-b sm:border-0"
         }`}
       >
-        <Image
-          src="/assets/icons/rupay.svg"
-          width={500}
-          height={500}
-          alt="rupay"
-          className="w-[180px]"
-        />
+        <Link href="/">
+          <Image
+            src="/assets/icons/rupay.svg"
+            width={500}
+            height={500}
+            alt="rupay"
+            className="w-[180px]"
+          />
+        </Link>
         {/* desktop */}
         <div className="sm:flex gap-8  hidden">
           {MENU.map((item) => (

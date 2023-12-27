@@ -1,89 +1,35 @@
+"use client";
 import Link from "next/link";
 import { Footer, Header, JoinUs } from "../(components)";
 import Image from "next/image";
 import { FaTwitter, FaInstagram, FaFacebookSquare } from "react-icons/fa";
+import Carousel from "react-multi-carousel";
+import { EMPLOYEE_DATA, WORKS_DATA } from "./dummy";
 
-const WORKS_DATA = [
-  {
-    title: "3",
-    description: "Nations",
-    color: "#0146B1",
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
   },
-  {
-    title: ">4",
-    description: "Daily Language",
-    color: "#FE9F0F",
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4,
   },
-  {
-    title: "74%",
-    description: "Age < 30 yoe",
-    color: "#0146B1",
+  tablet: {
+    breakpoint: { max: 1024, min: 640 },
+    items: 3,
   },
-  {
-    title: "78%",
-    description: "Indonesia",
-    color: "#FE9F0F",
+  mobile: {
+    breakpoint: { max: 640, min: 0 },
+    items: 2,
   },
-  {
-    title: "69%",
-    description: "Engineer",
-    color: "#0146B1",
-  },
-  {
-    title: "3%",
-    description: "Freshgraduates",
-    color: "#FE9F0F",
-  },
-];
-
-const EMPLOYEE_DATA = [
-  {
-    photo: "vico.svg",
-    name: "Vico Delta F.",
-    role: "Director",
-    twitter: "",
-    facebook: "",
-    instagram: "",
-  },
-  {
-    photo: "oel.svg",
-    name: "Mbak Oel",
-    role: "Food Department",
-    twitter: "",
-    facebook: "",
-    instagram: "",
-  },
-  {
-    photo: "joko.svg",
-    name: "Mbah Djoko",
-    role: "Cafe n Chill",
-    twitter: "",
-    facebook: "",
-    instagram: "",
-  },
-  {
-    photo: "kaafi.svg",
-    name: "Kaafi",
-    role: "Lead Backend",
-    twitter: "",
-    facebook: "",
-    instagram: "",
-  },
-  {
-    photo: "toimul.svg",
-    name: "Toimul",
-    role: "Lead Frontend",
-    twitter: "",
-    facebook: "",
-    instagram: "",
-  },
-];
+};
 
 export default function About() {
   return (
     <>
       <Header />
-
       <div className="w-full sm:pt-10 pt-20 px-12">
         <h1 className="text-center text-[#757780] text-lg uppercase">
           RUPAY PAYMENT GATEWAY
@@ -104,9 +50,23 @@ export default function About() {
       </div>
 
       <section className="ornament-diagonal py-24">
-        <div className="flex overflow-x-scroll pb-12 mt-8 mx-auto justify-center items-center custom-scroll">
-          {[1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4].map((item) => (
-            <div key={item} className="w-64 h-64 mx-2 ">
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={3000}
+          keyBoardControl={true}
+          // customTransition="all 3"
+          transitionDuration={1500}
+          removeArrowOnDeviceType={[
+            "superLargeDesktop",
+            "desktop",
+            "tablet",
+            "mobile",
+          ]}
+        >
+          {[1, 2, 3, 4].map((item) => (
+            <div key={item} className="w-64 h-64 mx-auto">
               <Image
                 src={`/assets/images/work/${item}.svg`}
                 width={200}
@@ -117,7 +77,7 @@ export default function About() {
               <p className="w-64" />
             </div>
           ))}
-        </div>
+        </Carousel>
       </section>
 
       <section className="p-12">
