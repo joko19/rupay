@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <>
       <Header />
-      <div className="w-full sm:pt-10 pt-20 px-12">
+      <div className="w-full sm:pt-10 pt-20 px-12 sm:bg-[#fbf8fd]">
         <h1 className="text-center text-[#757780] text-lg uppercase">
           PRODUCT & SERVICES
         </h1>
@@ -22,7 +22,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-12 gap-4 sm:p-12 p-4">
+      <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-12 gap-4 sm:p-12 p-4 mt-8">
         {SERVICES.map((item) => (
           <div
             key={item.title}
@@ -41,7 +41,9 @@ export default function Services() {
           </div>
         ))}
       </div>
+      <div className="sm:h-0 h-32"/>
       <JoinUs />
+      <div className="sm:h-0 h-32"/>
       <Footer />
     </>
   );

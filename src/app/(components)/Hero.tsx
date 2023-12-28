@@ -7,7 +7,7 @@ import Carousel from "react-multi-carousel";
 import { responsive } from "./const";
 
 const PaymentMethods = () => (
-  <div className="flex flex-col items-center justify-center bg-[#fbf8fd] max-w-[400px] rounded-[120px] p-8 border-[#eceaee] mx-auto">
+  <div className="flex flex-col items-center justify-center bg-[#fbf8fd] max-w-[400px] rounded-[120px] p-8 border-[#eceaee] mx-4 shadow-lg">
     🌟<h1 className="font-bold text-3xl">Payment Methods</h1>
     <div className="flex flex-wrap gap-2 mx-auto items-center justify-center mt-4">
       <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1">
@@ -40,7 +40,7 @@ const PaymentMethods = () => (
 );
 
 const DailyCheckouts = () => (
-  <div className="flex flex-col justify-between bg-[#fbf8fd] max-w-[400px] rounded-[120px] pl-8 pb-8 pt-8 border-[#eceaee] mx-auto">
+  <div className="flex flex-col justify-between bg-[#fbf8fd] max-w-[400px] rounded-[120px] pl-8 pb-8 pt-8 border-[#eceaee] mx-4 shadow-lg">
     <div className="flex gap-2 items-center px-4 pt-8">
       <p className="bg-[#E1E2EC] p-2 rounded-full">Daily Checkouts</p>
       <p className="text-[#FE9F0F]">+23%</p>
@@ -59,7 +59,7 @@ const DailyCheckouts = () => (
 );
 
 const RealtimeDashboard = () => (
-  <div className="flex flex-col items-center justify-between bg-[#fbf8fd] max-w-[400px] rounded-[120px] px-8 pt-8 border-[#eceaee] mx-auto">
+  <div className="flex flex-col items-center justify-between bg-[#fbf8fd] max-w-[400px] rounded-[120px] px-8 pt-8 border-[#eceaee] mx-4 shadow-lg">
     <h1 className="font-bold text-3xl text-center">
       Realtime Dashboard Monitoring
     </h1>
@@ -74,7 +74,7 @@ const RealtimeDashboard = () => (
 );
 
 const LiveSupport = () => (
-  <div className="flex flex-col items-center justify-between gap-4 bg-[#fbf8fd] max-w-[400px] rounded-[120px] p-12 border-[#eceaee] mx-auto">
+  <div className="flex flex-col items-center justify-between gap-4 bg-[#fbf8fd] max-w-[400px] rounded-[120px] p-12 border-[#eceaee] mx-4 shadow-lg">
     <h1 className="font-bold text-3xl text-center">24/7 Live Support💯</h1>
     <div className="flex flex-col gap-2 w-full">
       <div className="flex justify-end">
@@ -99,8 +99,8 @@ const LiveSupport = () => (
 
 export function Hero() {
   return (
-    <section>
-      <div className="flex w-full bg-white">
+    <section className="sm:bg-[#fbf8fd]" >
+      <div className="flex w-full sm:bg-[#fbf8fd] bg-white">
         <Image
           src="/assets/ornament/hero-left.svg"
           width={500}
@@ -149,7 +149,7 @@ export function Hero() {
           "tablet",
           "mobile",
         ]}
-        className="2xl:-mt-96 lg:-mt-56 md:-mt-40 sm:-mt-16"
+        className="2xl:-mt-96 lg:-mt-56 md:-mt-40 sm:-mt-16 mt-8 pb-24 sm:bg-[#fbf8fd]"
       >
         <PaymentMethods />
         <DailyCheckouts />

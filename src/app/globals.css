@@ -2,44 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-.custom-scroll {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scrollbar-width: thin;
-  scrollbar-color: #c5c6d0 #e1e2ec;
-  /* border-radius: 29px; */
-  /* max-width: 100vw;  */
-  margin: 8 auto; /* Center the element horizontally */
-}
-
-.custom-scroll::-webkit-scrollbar {
-  width: 8px !important;
-  border-radius: 29px;
-  /* max-width: 10vw; Set your preferred maximum width */
-}
-
-.custom-scroll::-webkit-scrollbar-thumb {
-  background-color: #c5c6d0;
-  border-radius: 29px;
-  /* max-width: 10vw; Set your preferred maximum width */
-}
-
-.custom-scroll::-webkit-scrollbar-track {
-  background-color: #e1e2ec;
-  border-radius: 29px;
-  /* max-width: 10vw; Set your preferred maximum width */
-}
-
-.ornament-diagonal{
-  background-image: url('/assets/ornament/diagonal.svg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 
 .font-serif {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
+}
+
+/* Custom Scrollbar */
+
+.scroll-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Custom scrollbar styles */
+.custom-scrollbar {
+  overflow-x: auto;
+  width: calc(100% - 240px);
+  margin: auto;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  /* display: none; */
+  background-color: #888;
+  border-radius: 29px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #e1e2ec;
+  border-radius: 29px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #c5c6d0;
+  border-radius: 29px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar {
+  display: block;
 }

@@ -85,8 +85,8 @@ export function Header() {
       </header>
 
       <nav
-        className={`sm:flex sm:pb-0 pb-8 sticky top-20 bg-white z-50 ${
-          isMobileMenuOpen ? "flex flex-col border-b" : "hidden"
+        className={`sm:flex sm:pb-0 pb-8 fixed top-20 bg-white z-50 w-full transition-transform ${
+          isMobileMenuOpen ? "flex flex-col border-b translate-x-0" : "hidden -translate-x-full"
         }`}
       >
         <div className="flex flex-col gap-2 sm:hidden items-center text-[#1B1B1F]">

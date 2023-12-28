@@ -43,7 +43,7 @@ export function WhySection() {
         {DATA.map((item) => (
           <div
             key={item.id}
-            className=" flex flex-col gap-4 border rounded-2xl p-4 sm:bg-white bg-[#FEFBFF] sm:text-2xl text-lg font-serif"
+            className=" flex flex-col gap-4 border rounded-2xl p-8 sm:bg-white bg-[#FEFBFF] sm:text-2xl text-lg font-serif"
           >
             <Image
               key={item.id}

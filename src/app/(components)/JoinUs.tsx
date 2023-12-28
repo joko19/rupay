@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -15,9 +16,9 @@ export function JoinUs() {
         Platform?
       </h2>
       <div className="flex mt-12 mx-auto justify-center sm:gap-8 gap-4">
-        <button className="w-44 bg-[#E1E2EC] py-4 rounded-full">
+        <Link href="/contact" className="w-44 bg-[#E1E2EC] py-4 rounded-full text-center">
           Contact Us
-        </button>
+        </Link>
         <button className="w-44 flex justify-center gap-6 items-center bg-[#0146B1] text-white py-4 rounded-full">
           Get Started <FaArrowRight />
         </button>
