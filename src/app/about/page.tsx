@@ -18,12 +18,12 @@ const responsive = {
     items: 4,
   },
   tablet: {
-    breakpoint: { max: 1024, min: 640 },
+    breakpoint: { max: 1024, min: 768 },
     items: 3,
   },
   mobile: {
-    breakpoint: { max: 640, min: 0 },
-    items: 2,
+    breakpoint: { max: 768, min: 0 },
+    items: 4,
   },
 };
 
@@ -67,7 +67,7 @@ export default function About() {
           ]}
         >
           {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="w-64 h-64 mx-auto">
+            <div key={item} className="md:w-64 md:h-64 w-[100px] h-[100px]  mx-auto p-4">
               <Image
                 src={`/assets/images/work/${item}.svg`}
                 width={200}
@@ -75,7 +75,7 @@ export default function About() {
                 alt="missions"
                 className="w-full h-full object-cover rounded-lg"
               />
-              <p className="w-64" />
+              <div className="w-100"></div>
             </div>
           ))}
         </Carousel>
@@ -102,7 +102,7 @@ export default function About() {
       </section>
       <section className="ornament-diagonal">
         <div className="max-w-7xl mx-auto">
-          <h2 className="max-w-4xl mx-auto text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
+          <h2 className="max-w-3xl mx-auto text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
             Works. Together with. Diversities🤙
           </h2>
           <div className="grid sm:grid-cols-3 grid-cols-2 sm:gap-12 gap-4 sm:p-12 p-4">

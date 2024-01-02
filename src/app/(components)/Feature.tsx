@@ -147,7 +147,7 @@ export function Feature() {
         </center>
       </div>
 
-      <div className="custom-scrollbar max-w-7xl">
+      <div className="custom-scrollbar w-[90%] ">
         <div className="content flex gap-8 pb-12 mt-8 z-auto">
           {DATA.map((item) => (
             <div key={item.title} className="!w-[576px] sm:mx-auto mx-2">

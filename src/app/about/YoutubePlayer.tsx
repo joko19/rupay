@@ -8,7 +8,7 @@ const YouTubePlayer = ({ videoId }: { videoId: string }) => {
       src={`https://www.youtube.com/embed/${videoId}`}
       title="YouTube Video"
       allowFullScreen
-      className="sm:h-96 h-72"
+      className="sm:h-96 h-72 rounded-xl"
     />
   );
 };

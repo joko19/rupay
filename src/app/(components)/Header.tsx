@@ -35,7 +35,7 @@ export function Header() {
   return (
     <>
       <header
-        className={`flex items-center justify-between py-2 px-12 sticky top-0 bg-white z-50 ${
+        className={`flex items-center justify-between py-5 px-12 sticky top-0 bg-white z-50 ${
           !isMobileMenuOpen && "border-b sm:border-0"
         }`}
       >
@@ -45,7 +45,7 @@ export function Header() {
             width={500}
             height={500}
             alt="rupay"
-            className="w-[180px]"
+            className="w-[127px]"
           />
         </Link>
         {/* desktop */}
@@ -64,9 +64,12 @@ export function Header() {
             </Link>
           ))}
         </div>
+        <div className="w-[127px] flex justify-end" >
+
         <button className="bg-[#FE9F0F] px-4 py-2 rounded-full text-white sm:flex hidden">
           get Started
         </button>
+        </div>
 
         {/* mobile */}
         <div className="sm:hidden">

@@ -3,20 +3,22 @@ import Image from "next/image";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
-import Carousel from "react-multi-carousel";
-import { responsive } from "./const";
 
 const PaymentMethods = () => (
-  <div className="flex flex-col items-center justify-center bg-[#fbf8fd] max-w-[400px] rounded-[120px] p-8 border-[#eceaee] mx-4 shadow-lg">
-    🌟<h1 className="font-bold text-3xl">Payment Methods</h1>
-    <div className="flex flex-wrap gap-2 mx-auto items-center justify-center mt-4">
-      <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1">
+  <div className="flex flex-col items-center justify-center bg-[#fbf8fd] sm:w-[581px] w-[271px] sm:h-[400px] h-[213px] sm:rounded-[120px] rounded-[56px] p-8 border-[#eceaee] mx-4 shadow-xl sm:text-base text-[10px] border">
+    🌟<h1 className="font-bold sm:text-3xl">Payment Methods</h1>
+    <p className="text-[#757780]">Local & International</p>
+    <div className="flex flex-wrap sm:gap-4 gap-2 mx-auto items-center justify-center sm:mt-8 mt-4 sm:px-8">
+      <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded-lg px-2 py-1">
         Virtual Account⭐
       </div>
-      <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1">
+      <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded-lg px-2 py-1">
         Debit Cards💳
       </div>
-      <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1">
+      <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded-lg px-2 py-1">
+        QR Codes📲
+      </div>
+      {/* <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1 sm:flex hidden">
         Retail Outlets🏬
       </div>
       <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1 sm:flex hidden">
@@ -26,16 +28,13 @@ const PaymentMethods = () => (
         Paylater🧾
       </div>
       <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1 sm:flex hidden">
-        QR Codes📲
-      </div>
-      <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1 sm:flex hidden">
         Credit Cards💳
       </div>
       <div className="bg-[#EFEDF1] border-[#E1E2EC] rounded px-2 py-1 sm:flex hidden">
         Direct Debit📇
-      </div>
+      </div> */}
     </div>
-    <p className="text-[#757780] mt-4">Local & International</p>
+    <p className="text-[#757780] sm:mt-8 mt-4">With 4 upcoming methods...</p>
   </div>
 );
 
@@ -59,8 +58,8 @@ const DailyCheckouts = () => (
 );
 
 const RealtimeDashboard = () => (
-  <div className="flex flex-col items-center justify-between bg-[#fbf8fd] max-w-[400px] rounded-[120px] px-8 pt-8 border-[#eceaee] mx-4 shadow-lg">
-    <h1 className="font-bold text-3xl text-center">
+  <div className="flex flex-col items-center justify-between bg-[#fbf8fd] sm:w-[398px] w-[156px] sm:h-[346px] h-[148px] sm:rounded-[120px] rounded-[56px]  sm:px-8 sm:pt-8 px-4 pt-3 border-[#eceaee] mx-4 shadow-xl border">
+    <h1 className="font-bold sm:text-[25px] text-[10px] text-center">
       Realtime Dashboard Monitoring
     </h1>
     <Image
@@ -74,21 +73,21 @@ const RealtimeDashboard = () => (
 );
 
 const LiveSupport = () => (
-  <div className="flex flex-col items-center justify-between gap-4 bg-[#fbf8fd] max-w-[400px] rounded-[120px] p-12 border-[#eceaee] mx-4 shadow-lg">
-    <h1 className="font-bold text-3xl text-center">24/7 Live Support💯</h1>
+  <div className="flex flex-col items-center sm:justify-around gap-2 bg-[#fbf8fd] sm:w-[398px] w-[156px] sm:h-[346px] h-[148px] sm:rounded-[120px] rounded-[56px]  sm:px-8 sm:py-8 px-4 pt-3 border-[#eceaee] mx-4 shadow-xl border">
+     <h1 className="font-bold sm:text-[25px] text-[10px] text-center">24/7 Live Support💯</h1>
     <div className="flex flex-col gap-2 w-full">
       <div className="flex justify-end">
-        <p className="text-right bg-[#E1E2EC] w-36 rounded px-4 py-2 text-xs">
+        <p className="text-right bg-[#E1E2EC] sm:w-36 rounded sm:px-4 px-2 sm:py-2 py-1 sm:text-xs text-[6px]">
           Hi, need some help about the API
         </p>
       </div>
       <div className="flex justify-start">
-        <p className="text-left bg-[#0146B1] w-48 rounded px-4 py-2 text-white text-xs">
+        <p className="text-left bg-[#0146B1] w-48 rounded sm:px-4 px-2 sm:py-2 py-1 text-white sm:text-xs text-[6px]">
           Hi, Zelda here. I am ready to guide you. Which API?
         </p>
       </div>
       <div className="flex justify-end">
-        <p className="flex items-center  gap-2 text-right bg-[#E1E2EC] w-fit text-xs rounded px-4 py-2 text-[#757780]">
+        <p className="flex items-center  gap-2 text-right bg-[#E1E2EC] w-fit sm:text-xs text-[6px] rounded sm:px-4 px-2 sm:py-2 py-1 text-[#757780]">
           Type something to ask to RuPay Team{" "}
           <IoIosSend className="text-[#0146B1]" />
         </p>
@@ -99,7 +98,7 @@ const LiveSupport = () => (
 
 export function Hero() {
   return (
-    <section className="sm:bg-[#fbf8fd]" >
+    <section className="sm:bg-[#fbf8fd]">
       <div className="flex w-full sm:bg-[#fbf8fd] bg-white">
         <Image
           src="/assets/ornament/hero-left.svg"
@@ -135,27 +134,17 @@ export function Hero() {
           className="w-[180px]"
         />
       </div>
-      <Carousel
-        responsive={responsive}
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={3000}
-        keyBoardControl={true}
-        // customTransition="all 3"
-        transitionDuration={1500}
-        removeArrowOnDeviceType={[
-          "superLargeDesktop",
-          "desktop",
-          "tablet",
-          "mobile",
-        ]}
-        className="2xl:-mt-96 lg:-mt-56 md:-mt-40 sm:-mt-16 mt-8 pb-24 sm:bg-[#fbf8fd]"
-      >
+      {/* desktop */}
+      <div className="sm:flex hidden justify-around sm:-mt-20 pb-24 sm:bg-[#fbf8fd]">
+        <RealtimeDashboard />
         <PaymentMethods />
-        <DailyCheckouts />
+        <LiveSupport />
+      </div>
+      <div className="sm:hidden flex flex-wrap gap-2 justify-center mt-4 pb-24">
         <RealtimeDashboard />
         <LiveSupport />
-      </Carousel>
+        <PaymentMethods />
+      </div>
     </section>
   );
 }

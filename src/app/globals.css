@@ -21,7 +21,6 @@
 /* Custom scrollbar styles */
 .custom-scrollbar {
   overflow-x: auto;
-  width: calc(100% - 240px);
   margin: auto;
 }
 
@@ -47,4 +46,12 @@
 
 .custom-scrollbar:hover::-webkit-scrollbar {
   display: block;
+}
+
+.ornament-diagonal{
+  background-image: url('/assets/ornament/diagonal.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
