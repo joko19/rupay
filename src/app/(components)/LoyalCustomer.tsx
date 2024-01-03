@@ -18,26 +18,26 @@ const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 6,
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
+    items: 5,
   },
   tablet: {
     breakpoint: { max: 1024, min: 640 },
-    items: 3,
+    items: 4,
   },
   mobile: {
     breakpoint: { max: 640, min: 0 },
-    items: 2,
+    items: 3,
   },
 };
 
 export function LoyalCustomer() {
   return (
-    <section className="mx-auto pt-12 px-12 sm:bg-[#fbf8fd]">
-      <h1 className="text-center text-[#757780] text-lg uppercase">
+    <section className="mx-auto py-12 px-12 sm:bg-[#fbf8fd] ">
+      <h1 className="text-center text-[#757780] text-lg uppercase mb-8">
         Rupay Loyal Customer
       </h1>
 
@@ -57,13 +57,15 @@ export function LoyalCustomer() {
         ]}
       >
         {CUSTOMER.map((item) => (
-          <Image
-            key={item}
-            src={`/assets/images/loyal-customer/${item}`}
-            width={600}
-            height={600}
-            alt="brand"
-          />
+          <div key={item} className="px-4">
+            <Image
+              src={`/assets/images/loyal-customer/${item}`}
+              width={600}
+              height={600}
+              alt="brand"
+              className="mx-12"
+            />
+          </div>
         ))}
       </Carousel>
     </section>

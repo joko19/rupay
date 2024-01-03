@@ -10,11 +10,11 @@ import YouTubePlayer from "./YoutubePlayer";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    breakpoint: { max: 4000, min: 1920 },
+    items: 6,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 1920, min: 1024 },
     items: 4,
   },
   tablet: {
@@ -23,7 +23,7 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 768, min: 0 },
-    items: 4,
+    items: 3,
   },
 };
 
@@ -31,6 +31,15 @@ export default function About() {
   return (
     <>
       <Header />
+      <div className="relative">
+        <Image
+          src={`/assets/ornament/diagonal.svg`}
+          width={640}
+          height={640}
+          alt="missions"
+          className="absolute w-screen -z-10 sm:inline-block hidden"
+        />
+      </div>
       <div className="w-full sm:pt-10 pt-20 px-12">
         <h1 className="text-center text-[#757780] text-lg uppercase">
           RUPAY PAYMENT GATEWAY
@@ -49,8 +58,16 @@ export default function About() {
           preferred choice for consumers and businesses alike.
         </p>
       </div>
-
-      <section className="ornament-diagonal py-24">
+      <div className="relative">
+        <Image
+          src={`/assets/ornament/diagonal.svg`}
+          width={640}
+          height={640}
+          alt="missions"
+          className="absolute w-screen -z-10 sm:hidden"
+        />
+      </div>
+      <section className="py-24">
         <Carousel
           responsive={responsive}
           infinite={true}
@@ -65,9 +82,13 @@ export default function About() {
             "tablet",
             "mobile",
           ]}
+          // className="-mt-24"
         >
-          {[1, 2, 3, 4].map((item) => (
-            <div key={item} className="md:w-64 md:h-64 w-[100px] h-[100px]  mx-auto p-4">
+          {[1, 2, 3, 4, 1, 2, 3, 4].map((item) => (
+            <div
+              key={item}
+              className="md:w-64 md:h-64 w-[33vw] h-[33vw]  mx-auto p-4"
+            >
               <Image
                 src={`/assets/images/work/${item}.svg`}
                 width={200}
@@ -100,6 +121,16 @@ export default function About() {
           <YouTubePlayer videoId="a3ICNMQW7Ok" />
         </div>
       </section>
+
+      <div className="relative">
+        <Image
+          src={`/assets/ornament/diagonal.svg`}
+          width={640}
+          height={640}
+          alt="missions"
+          className="absolute w-screen -z-10"
+        />
+      </div>
       <section className="ornament-diagonal">
         <div className="max-w-7xl mx-auto">
           <h2 className="max-w-3xl mx-auto text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
