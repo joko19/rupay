@@ -36,7 +36,7 @@ const responsive = {
 
 export function LoyalCustomer() {
   return (
-    <section className="mx-auto py-12 px-12 sm:bg-[#fbf8fd] ">
+    <section className="mx-auto py-12 sm:bg-[#fbf8fd] ">
       <h1 className="text-center text-[#757780] text-lg uppercase mb-8">
         Rupay Loyal Customer
       </h1>
