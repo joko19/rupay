@@ -82,7 +82,6 @@ export default function About() {
             "tablet",
             "mobile",
           ]}
-          // className="-mt-24"
         >
           {[1, 2, 3, 4, 1, 2, 3, 4].map((item) => (
             <div

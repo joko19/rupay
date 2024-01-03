@@ -1,45 +1,5 @@
-"use client";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
-import Carousel from "react-multi-carousel";
-
-// const responsive = {
-//   superLargeDesktop: {
-//     // the naming can be any, depends on you.
-//     breakpoint: { max: 4000, min: 3000 },
-//     items: 5,
-//   },
-//   desktop: {
-//     breakpoint: { max: 3000, min: 1024 },
-//     items: 4,
-//   },
-//   tablet: {
-//     breakpoint: { max: 1024, min: 640 },
-//     items: 3,
-//   },
-//   mobile: {
-//     breakpoint: { max: 640, min: 0 },
-//     items: 2,
-//   },
-// };
-
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    partialVisibilityGutter: 40,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    partialVisibilityGutter: 30,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    partialVisibilityGutter: 20,
-  },
-};
+import React from "react";
 
 const DATA = [
   {
@@ -65,70 +25,6 @@ const DATA = [
 ];
 
 export function Feature() {
-  // const [scrollPosition, setScrollPosition] = useState<number>(0);
-  // const [isDragging, setIsDragging] = useState<boolean>(false);
-  // const thumbRef = useRef<HTMLDivElement>(null);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollContainer = document.getElementById(
-  //       "scroll-container"
-  //     ) as HTMLDivElement;
-  //     const maxScrollValue =
-  //       scrollContainer.scrollWidth - scrollContainer.clientWidth;
-  //     setScrollPosition(scrollContainer.scrollLeft / maxScrollValue);
-  //   };
-
-  //   const scrollContainer = document.getElementById(
-  //     "scroll-container"
-  //   ) as HTMLDivElement;
-  //   scrollContainer.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     scrollContainer.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
-  // const handleThumbMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
-  //   // if () {
-  //   setIsDragging(true);
-
-  //   const scrollContainer = document.getElementById(
-  //     "scroll-container"
-  //   ) as HTMLDivElement;
-  //   const maxScrollValue =
-  //     scrollContainer.scrollWidth - scrollContainer.clientWidth;
-  //   console.log(scrollContainer);
-  //   const initialX = event.clientX;
-  //   const initialScrollPosition = scrollContainer.scrollLeft;
-
-  //   const handleMouseMove = (event: MouseEvent) => {
-  //     console.log("handle move");
-  //     console.log(isDragging);
-  //     // if (isDragging) {
-  //     // console.log("dragging")
-  //     const deltaX = event.clientX - initialX;
-  //     const newScrollPosition =
-  //       initialScrollPosition +
-  //       (deltaX / scrollContainer.clientWidth) * maxScrollValue;
-  //     scrollContainer.scrollLeft = Math.max(
-  //       0,
-  //       Math.min(newScrollPosition, maxScrollValue)
-  //     );
-  //     // }
-  //     console.log(deltaX);
-  //     console.log(newScrollPosition);
-  //   };
-
-  //   const handleMouseUp = () => {
-  //     setIsDragging(false);
-  //   };
-
-  //   document.addEventListener("mousedown", handleMouseMove);
-  //   document.addEventListener("mouseup", handleMouseUp);
-  //   // }
-  // };
-
   return (
     <section className="mx-auto sm:px-0 sm:py-16 py-12 sm:bg-[#fbf8fd] bg-white">
       <div className="sm:px-12">
@@ -146,11 +42,10 @@ export function Feature() {
           APIs.
         </center>
       </div>
-
       <div className="custom-scrollbar w-[90%] ">
-        <div className="content flex gap-8 pb-12 mt-8 z-auto">
+        <div className="content flex gap-4 pb-12 mt-8 z-auto">
           {DATA.map((item) => (
-            <div key={item.title} className="!w-[576px] sm:mx-auto mx-2">
+            <div key={item.title} className="!w-[576px] sm:mx-auto h-auto">
               <div className="sm:w-64 w-44 h-full mx-auto flex flex-col justify-between gap-4 bg-white border rounded-3xl p-8 shadow-xl">
                 <div>
                   <h2 className="sm:text-3xl text-xl font-serif">
