@@ -130,7 +130,7 @@ export default function About() {
           className="absolute w-screen -z-10"
         />
       </div>
-      <section className="ornament-diagonal">
+      <section>
         <div className="max-w-7xl mx-auto">
           <h2 className="max-w-3xl mx-auto text-black sm:text-6xl text-3xl text-center mt-4 font-serif">
             Works. Together with. Diversities🤙
