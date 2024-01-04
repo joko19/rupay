@@ -10,16 +10,16 @@ import YouTubePlayer from "./YoutubePlayer";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 1920 },
-    items: 6,
+    breakpoint: { max: 4000, min: 1535 },
+    items: 5,
   },
   desktop: {
-    breakpoint: { max: 1920, min: 1024 },
+    breakpoint: { max: 1535, min: 1024 },
     items: 4,
   },
   tablet: {
     breakpoint: { max: 1024, min: 768 },
-    items: 3,
+    items: 4,
   },
   mobile: {
     breakpoint: { max: 768, min: 0 },
@@ -86,7 +86,7 @@ export default function About() {
           {[1, 2, 3, 4, 1, 2, 3, 4].map((item) => (
             <div
               key={item}
-              className="md:w-64 md:h-64 w-[33vw] h-[33vw]  mx-auto p-4"
+              className="2xl:w-[20vw] 2xl:h-[20vw] md:w-[25vw] md:h-[25vw] w-[33.33vw] h-[33.33vw]  mx-auto sm:p-3 p-2"
             >
               <Image
                 src={`/assets/images/work/${item}.svg`}
@@ -95,7 +95,6 @@ export default function About() {
                 alt="missions"
                 className="w-full h-full object-cover rounded-lg"
               />
-              <div className="w-100"></div>
             </div>
           ))}
         </Carousel>
